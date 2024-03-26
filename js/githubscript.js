@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function setupCustomPortfolioConfirmation(selector) {
     document.querySelectorAll(selector).forEach(link => {
         link.addEventListener('click', function(event) {
-            if (this.innerText.toLowerCase() === 'portfolio') {
+            if (this.innerText.toLowerCase() === '#') {
                 event.preventDefault(); // Prevent default link behavior
                 showModal();
             }
