@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    order: 1;
+    margin-top: 30px;
+}
+
+.contact-form{
+    order: 2;
+    margin-top: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-form, .contact-info {
+    width: 48%; 
+}
+
+
+.contact-form h2, .contact-info h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 10px); 
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+a{
+    color: cadetblue;
+}
+
+a:hover{
+    opacity: 0.6;
+}

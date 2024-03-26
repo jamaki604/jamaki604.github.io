@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333; 
+    background-color: #fff; 
+}
+
+header h1, section h2 {
+    font-family: 'Courier New', monospace; 
+    color: #333; 
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+}
+
+p, ul {
+    margin-bottom: 20px; 
+}
+
+a {
+    color: #333; 
+    text-decoration: underline; 
+}
+
+

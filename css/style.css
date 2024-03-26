@@ -1,0 +1,99 @@
+/* style.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lucida Console', monospace;
+    background-color: #fff; 
+    color: #000; 
+}
+
+#terminal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #000; 
+    background-color: #fff;
+    color: #000; 
+}
+
+#greeting, #nameInput, #options button {
+    white-space: pre;
+    font-family: 'Lucida Console', monospace;
+    color: #000; 
+}
+
+#nameInput, #options button {
+    background-color: #ffffff; 
+    border: 1px solid #000; 
+    padding: 5px;
+}
+
+#nameInput {
+    margin-top: 10px;
+}
+
+
+#navLinks { display: none; }
+
+.nav-hidden .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    cursor: pointer;
+    color: #000; 
+}
+
+
+.nav-shown #navLinks {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #f9f9f9; 
+    width: 100%;
+    text-align: left;
+}
+
+.nav-shown a {
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    color: black; 
+}
+
+#confirmationBox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff; 
+    color: #000; 
+    border: 2px solid #000; 
+    z-index: 1000; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    font-weight: bold; 
+    font-family: 'Lucida Console', monospace; 
+}
+
+#confirmationBox p {
+    margin-bottom: 20px;
+}
+
+#confirmationBox button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    cursor: pointer;
+    font-family: 'Lucida Console', monospace; 
+}
+
+#confirmationBox button:hover {
+    opacity: 0.6;
+}
