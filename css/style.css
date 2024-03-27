@@ -65,6 +65,18 @@ body, html {
     color: black; 
 }
 
+#portfolioLink {
+    cursor: pointer; 
+}
+
+#porfolioLink:hover{
+    opacity: 0.7;
+}
+
+.nav-shown a:hover{
+    opacity: 0.7;
+}
+
 #confirmationBox {
     position: fixed;
     left: 50%;
