@@ -61,11 +61,14 @@ window.onload = () => {
 };
 
 function chooseOption(option) {
-    if (option !== 'Portfolio') { 
+    if (option === 'Portfolio') {
+        showConfirmation();
+    } else {
         const fileName = option + '.html';
         window.location.href = fileName;
     }
 }
+
 
 function showConfirmation() {
     
