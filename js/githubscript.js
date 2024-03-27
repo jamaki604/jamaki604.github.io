@@ -1,33 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
-    setupCustomPortfolioConfirmation('a[href$="portfolio.html"]');
-});
+    // Target the modified Portfolio link/button
+    var portfolioLink = document.getElementById('portfolioLink');
 
-function setupCustomPortfolioConfirmation(selector) {
-    document.querySelectorAll(selector).forEach(link => {
-        link.addEventListener('click', function(event) {
-            if (this.innerText.toLowerCase() === 'portfolio') {
-                event.preventDefault(); // Prevent default link behavior
-                showModal();
-            }
-        });
+    // Attach click event listener to the Portfolio link/button
+    portfolioLink.addEventListener('click', function() {
+        showModal();
     });
-}
+});
 
 function showModal() {
     const modal = document.getElementById('confirmationModal');
     modal.style.display = 'block';
 
-    // When the user clicks on "Take me there", go to GitHub
+    // Setup button click handlers within the modal
     document.getElementById('confirmBtn').onclick = function() {
-        window.location.href = 'https://github.com/jamaki604';
+        window.location.href = 'https://github.com/jamaki604'; // Navigate to GitHub
     };
 
-    // When the user clicks on "Go back", close the modal
     document.getElementById('cancelBtn').onclick = function() {
-        modal.style.display = 'none';
+        modal.style.display = 'none'; // Close the modal
     };
 
-    // Also close the modal if the user clicks outside of it
+    // Close the modal if the user clicks outside of it
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
