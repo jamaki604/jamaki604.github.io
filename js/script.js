@@ -66,10 +66,11 @@ function chooseOption(option) {
     if (lowerCaseOption === 'portfolio') {
         showConfirmation();
     } else {
-        const fileName = option + '.html';
+        const fileName = lowerCaseOption + '.html';
         window.location.href = fileName;
     }
 }
+
 
 
 function showConfirmation() {
