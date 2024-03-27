@@ -61,7 +61,9 @@ window.onload = () => {
 };
 
 function chooseOption(option) {
-    if (option === 'Portfolio') {
+    const lowerCaseOption = option.toLowerCase(); 
+
+    if (lowerCaseOption === 'portfolio') {
         showConfirmation();
     } else {
         const fileName = option + '.html';
