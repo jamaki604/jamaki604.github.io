@@ -14,3 +14,15 @@
     font-weight: bold; 
     font-family: 'Lucida Console', monospace; 
 }
+
+#portfolioLink {
+    cursor: pointer; 
+}
+
+#navLinks a:hover{
+    opacity: 0.7;
+}
+
+#porfolioLink:hover{
+    opacity: 0.7;
+}
