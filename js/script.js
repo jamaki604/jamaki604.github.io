@@ -61,10 +61,29 @@ window.onload = () => {
 };
 
 function chooseOption(option) {
+    if (option === 'Portfolio') {
+        showConfirmation();
+    } else {
         const fileName = option + '.html';
         window.location.href = fileName;
+    }
 }
 
+
+function showConfirmation() {
+    
+    const confirmationBox = document.getElementById('confirmationBox');
+    confirmationBox.style.display = 'block';
+}
+
+function goToGitHub() {
+    window.location.href = 'https://github.com/jamaki604';
+}
+
+function cancelNavigation() {
+    const confirmationBox = document.getElementById('confirmationBox');
+    confirmationBox.style.display = 'none'; 
+}
 
 function toggleNav() {
     var navBar = document.getElementById("navBar");
