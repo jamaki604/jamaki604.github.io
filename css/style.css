@@ -116,11 +116,6 @@ body, html {
         font-size: 14px;
     }
 
-    #terminal {
-        width: 90%; 
-        left: 5%; 
-        transform: translateY(-50%); 
-    }
 
     .nav-hidden .icon, .nav-shown #navLinks {
         width: 100%; 
