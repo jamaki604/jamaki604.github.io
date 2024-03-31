@@ -109,3 +109,32 @@ body, html {
 #confirmationBox button:hover {
     opacity: 0.6;
 }
+
+/* Mobile optimization starts here */
+@media (max-width: 768px) {
+    body, html {
+        font-size: 14px;
+    }
+
+    #terminal {
+        width: 90%; 
+        left: 5%; 
+        transform: translateY(-50%); 
+    }
+
+    .nav-hidden .icon, .nav-shown #navLinks {
+        width: 100%; 
+    }
+
+    .nav-shown a {
+        padding: 12px; 
+    }
+
+    #confirmationBox {
+        width: 80%; 
+        left: 10%; 
+    }
+
+    #confirmationBox button {
+        padding: 8px 12px; 
+}
