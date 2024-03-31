@@ -106,3 +106,20 @@ a{
 a:hover{
     opacity: 0.6;
 }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%; 
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 16px); 
+    }
+}
