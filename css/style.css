@@ -35,23 +35,25 @@ body, html {
 }
 
 
+
+/*Navigation styles */
+
 #navLinks {
-    display: none; 
+    display: none;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #fff; 
     text-align: left;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 #menuIcon {
     display: block;
-    position: fixed; 
+    position: fixed;
     top: 10px;
-    left: 10px; 
+    left: 10px;
     cursor: pointer;
-    z-index: 1001; 
+    z-index: 1001;
 }
-
 
 .nav-hidden {
     display: block;
@@ -60,16 +62,16 @@ body, html {
     left: 10px;
     padding: 16px;
     cursor: pointer;
-    color: #000; 
+    color: #000;
 }
 
 
 .nav-shown #navLinks {
     display: block;
-    position: absolute;
+    position: absolute; 
     top: 40px;
     left: 0;
-    background-color: #f9f9f9; 
+    background-color: #fff; 
     width: 100%;
     text-align: left;
 }
@@ -78,7 +80,9 @@ body, html {
     display: block;
     text-decoration: none;
     padding: 16px;
-    color: black; 
+    color: black;
+    font-weight: bold; 
+    background-color: #fff; 
 }
 
 #confirmationBox {
@@ -117,12 +121,14 @@ body, html {
 /*Mobile Optimization */
 @media (max-width: 768px) {
     #navLinks {
+        display: none; 
         position: static; 
-        padding: 0; 
+        background-color: #fff; 
+        padding: 0;
     }
 
     #navLinks.show {
-        display: block; 
+        display: block;
     }
 
     #navLinks a, .nav-shown a {
@@ -130,5 +136,15 @@ body, html {
         text-decoration: none;
         padding: 16px;
         color: black;
+        font-weight: bold; 
+        background-color: #fff; 
+    }
+
+    #terminal {
+        position: static;
+        margin-top: 20px; 
+        width: 90%; 
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
