@@ -37,11 +37,21 @@ body, html {
 
 #navLinks { display: none; }
 
-.nav-hidden .icon {
+#menuIcon {
+    display: block;
+    position: fixed; 
+    top: 10px;
+    left: 10px; 
+    cursor: pointer;
+    z-index: 1001; 
+}
+
+
+.nav-hidden {
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
     padding: 16px;
     cursor: pointer;
     color: #000; 
@@ -63,18 +73,6 @@ body, html {
     text-decoration: none;
     padding: 16px;
     color: black; 
-}
-
-#portfolioLink {
-    cursor: pointer; 
-}
-
-#porfolioLink:hover{
-    opacity: 0.7;
-}
-
-.nav-shown a:hover{
-    opacity: 0.7;
 }
 
 #confirmationBox {
@@ -108,28 +106,4 @@ body, html {
 
 #confirmationBox button:hover {
     opacity: 0.6;
-}
-
-/* Mobile optimization starts here */
-@media (max-width: 768px) {
-    body, html {
-        font-size: 14px;
-    }
-
-
-    .nav-hidden .icon, .nav-shown #navLinks {
-        width: 100%; 
-    }
-
-    .nav-shown a {
-        padding: 12px; 
-    }
-
-    #confirmationBox {
-        width: 80%; 
-        left: 10%; 
-    }
-
-    #confirmationBox button {
-        padding: 8px 12px; 
 }
