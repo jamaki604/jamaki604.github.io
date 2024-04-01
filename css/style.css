@@ -85,6 +85,8 @@ body, html {
     background-color: #fff; 
 }
 
+
+/*Confirmation Box*/
 #confirmationBox {
     position: fixed;
     left: 50%;
@@ -140,7 +142,10 @@ body, html {
         font-weight: bold;
         background-color: #fff;
         text-align: center;
-        
+    }
+
+    #confirmationModal{
+        z-index: 10;
     }
 
 }
