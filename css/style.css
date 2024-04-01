@@ -121,7 +121,8 @@ body, html {
 /*Mobile Optimization */
 @media (max-width: 768px) {
     #navLinks {
-        display: hidden;
+        display: none;
+        z-index: 2;
     } 
     
     #navLinks.show {
