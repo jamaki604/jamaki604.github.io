@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Target the modified Portfolio link/button
-    var portfolioLink = document.getElementById('portfolioLink');
+    var mainPortfolioLink = document.getElementById('portfolioLink');
+    var footerPortfolioLink = document.getElementById('footerPortfolioLink');
 
-    // Attach click event listener to the Portfolio link/button
-    portfolioLink.addEventListener('click', function() {
+    mainPortfolioLink.addEventListener('click', function() {
+        showModal();
+    });
+
+    footerPortfolioLink.addEventListener('click', function() {
         showModal();
     });
 });
+
 
 function showModal() {
     const modal = document.getElementById('confirmationModal');
