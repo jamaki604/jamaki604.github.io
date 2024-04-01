@@ -89,7 +89,15 @@ function cancelNavigation() {
 }
 
 function toggleNav() {
+    var navBar = document.getElementById("navBar");
     var navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle('show');
+    if (navBar.classList.contains('nav-hidden')) {
+        navBar.classList.remove('nav-hidden');
+        navBar.classList.add('nav-shown');
+        navLinks.style.display = "block";
+    } else {
+        navBar.classList.add('nav-hidden');
+        navBar.classList.remove('nav-shown');
+        navLinks.style.display = "none";
+    }
 }
-
