@@ -120,25 +120,22 @@ body, html {
 
 /*Mobile Optimization */
 @media (max-width: 768px) {
-    #navLinks {
-        display: none; 
-        position: static; 
-        background-color: #fff; 
-        padding: 0;
-    }
-
-    #navLinks.show {
+    #navLinks, #navLinks.show {
         display: block;
+        position: static; 
+        text-align: center; 
+        z-index: 2;
     }
 
-    #navLinks a, .nav-shown a {
+    #navLinks a {
         display: block;
         text-decoration: none;
         padding: 16px;
         color: black;
-        font-weight: bold; 
-        background-color: #fff; 
-        z-index: 20;
+        font-weight: bold;
+        background-color: #fff;
+        text-align: center;
+        
     }
 
 }
