@@ -140,11 +140,4 @@ body, html {
         background-color: #fff; 
     }
 
-    #terminal {
-        position: static;
-        margin-top: 20px; 
-        width: 90%; 
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }
