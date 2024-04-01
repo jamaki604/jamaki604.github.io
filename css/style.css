@@ -120,7 +120,11 @@ body, html {
 
 /*Mobile Optimization */
 @media (max-width: 768px) {
-    #navLinks, #navLinks.show {
+    #navLinks {
+        display: hidden;
+    } 
+    
+    #navLinks.show {
         display: block;
         position: static; 
         text-align: center; 
