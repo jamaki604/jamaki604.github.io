@@ -138,6 +138,7 @@ body, html {
         color: black;
         font-weight: bold; 
         background-color: #fff; 
+        z-index: 20;
     }
 
 }
