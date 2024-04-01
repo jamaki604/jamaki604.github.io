@@ -10,13 +10,13 @@
 <body>
 
 <div id="navBar" class="nav-hidden">
-    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    <div id="menuIcon" onclick="toggleNav()">&#9776;</div>
     <div id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="resume.html">Resume</a>
         <a id="portfolioLink">Portfolio</a>
-        <a href="contact.html">Contact</a>
+        <a href="Contact.html">Contact</a>
         
     </div>
 </div>
@@ -25,19 +25,24 @@
         <p id="greeting"></p>
         <input type="text" id="nameInput" placeholder="Type your name..." style="display:none;"/>
         <div id="options" style="display:none;">
-            <button onclick="chooseOption('about')">About</button>
-            <button onclick="chooseOption('resume')">Resume</button>
+            <button onclick="chooseOption('About')">About</button>
+            <button onclick="chooseOption('Resume')">Resume</button>
             <button onclick="showModal()">Portfolio</button>
-            <button onclick="chooseOption('contact')">Contact</button>
+            <button onclick="chooseOption('Contact')">Contact</button>
         </div>
     </div>
-    <script src="../js/script.js"></script>
-    <div id="confirmationBox" style="display:none;">
-        <p>You are about to go to GitHub, are you sure?</p>
-        <button onclick="goToGitHub()">Take me there</button>
-        <button onclick="cancelNavigation()">Go back</button>
+
+    <div id="confirmationModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>You are about to go to GitHub, are you sure?</p>
+            <button id="confirmBtn">Take me there</button>
+            <button id="cancelBtn">Go back</button>
+        </div>
     </div>
+
+    <script src="../js/script.js"></script>
     <script src="../js/githubscript.js"></script>
+    
 </body>
 
 </html>
