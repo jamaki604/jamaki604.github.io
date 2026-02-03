@@ -4,73 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Jacob King</title>
+
     <link rel="stylesheet" href="../css/navstyle.css">
     <link rel="stylesheet" href="../css/footerstyle.css">
     <link rel="stylesheet" href="../css/aboutstyle.css">
     <link rel="stylesheet" href="../css/githubalertstyle.css">
 
+    <!-- Responsive enhancements -->
+    <style>
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 2.6rem);
+        }
+
+        header p,
+        section p,
+        li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-container {
+                padding: 1rem;
+            }
+
+            header p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <div id="menuIcon">&#9776;</div>
-    <div id="navLinks">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
-            <a id="portfolioLink">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </div>
- 
-        
-    <header>
-        <h1>Hey There! I’m Jacob King.</h1>
-        <p>Welcome to my little corner of the internet. I recently graduated with a Bachelor's in Computer Science from Ball State University and continue blending tech with my knack for connecting with people. Think of me as part geek, part people-person, all rolled into one.</p>
-    </header>
-    
-    <section id="my-story">
-        <h2>What's My Story?</h2>
-        <p>Well, I’m glad you asked! I earned my Bachelor’s in Computer Science in May 2025 with a GPA of 3.0 / 4.0. It’s been a journey full of growth, challenge, and lots of code — and I’m just getting started.</p>
-    </section>
-    
-    <section id="skills">
-        <h2>What Can I Do?</h2>
-        <p>I’ve worked with a wide range of tools and technologies, including:</p>
-        <ul>
-            <li>Languages: TypeScript, Java, Dart, JavaScript, Python, SQL, C, Assembly</li>
-            <li>Frameworks & Tools: React, Node.js, Express, Flutter, Prisma ORM, Supabase, Tailwind CSS, Bootstrap</li>
-            <li>Platforms: Git/GitHub, Vercel, Clerk Auth, IntelliJ, Android Studio, VS Code, MySQL Workbench</li>
-            <li>Practices: CI/CD, Agile, Clean Code, Version Control</li>
-        </ul>
-        <p>I enjoy building both beautiful front-ends and robust, scalable back-ends. I'm especially drawn to projects that combine performance, usability, and purpose.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects I’ve Rocked</h2>
-        <p><strong>UI Web Builder:</strong> As the principal software developer and team lead, I created a drag-and-drop website builder that allows real-time customization of modular components. Built using React, TypeScript, Tailwind CSS, Node.js, Prisma, and Supabase. I also implemented Clerk for authentication and deployed the project to Vercel.</p>
-        
-        <p><strong>Spotify Search Engine:</strong> One of my first collaborative projects. I led development of a sleek, user-friendly search interface using the Spotify API and Flutter/Dart. This project sharpened my skills in API integration, team collaboration, and front-end design.</p>
-    </section>
-    
-    <section id="experience">
-        <h2>Where I've Been</h2>
-        <p>My journey’s been a bit of a rollercoaster. From managing teams in the Navy and navigating the high seas of B2B sales at Impact Networking to steering the ship at Verizon Wireless, it's all been about making meaningful connections and finding solutions that matter.</p>
-        <p>And why sales, you ask? It’s simple. There’s something powerful about helping someone find exactly what they need. Plus, making people smile is kind of my thing.</p>
-    </section>
-    
-    <section id="off-the-clock">
-        <h2>Off the Clock</h2>
-        <p>Life at home is a bustling, heartwarming affair, filled with love from my four dogs, two cats, and most importantly, my two-year-old son, Asher. Asher has brought an indescribable joy into our lives, making every moment precious. Being a father is undoubtedly the best thing that has ever happened to me. My wife, Nataleigh, and I cherish the laughter, love, and even the chaos that comes with our little big family. When I'm not basking in the joys of family life, you might find me riding motorcycles, creating tunes, capturing life’s moments through film and photography, or exploring the outdoors. That balance between family and passion is what keeps me grounded and growing.</p>
-    </section>
-    
-    <section id="lets-talk">
-        <h2>Why We Should Talk</h2>
-        <p>The Navy was one of the most important chapters of my life. My original goal was to serve in Naval Special Warfare, and while an injury shifted that path, my service taught me resilience, discipline, and leadership under pressure. I managed operations, led teams, and supported over 220 candidates every month — all with purpose and pride.</p>
-        <p>Now, I bring that same work ethic into everything I do. I know that any team hiring for a role is trusting someone to solve real problems and carry real weight. I take that trust seriously. I’m not just looking for a job — I’m looking to earn my place on a team where I can contribute fully, grow continuously, and exceed expectations through consistent, hard work and accountability.</p>
-        <p>If you're looking for someone who blends technical skill with humility, drive, and a deep respect for the role you're trying to fill — I’d be honored to be part of your mission.</p>
-    </section>
 
-           
+    <div id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a id="portfolioLink">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content-container">
+        <header>
+            <h1>Hey There! I’m Jacob King.</h1>
+            <p>
+                Welcome to my little corner of the internet. I’m a software engineer and founder who recently graduated with a Bachelor's in Computer Science from Ball State University. I enjoy building scalable software, launching real products, and blending technical problem-solving with strong communication and leadership.
+            </p>
+        </header>
+
+        <section id="my-story">
+            <h2>What's My Story?</h2>
+            <p>
+                I earned my Bachelor’s in Computer Science in May 2025 with a GPA of 3.0 / 4.0. Since then, I’ve continued growing as a developer by building and launching production software, including founding and operating my own SaaS product, GUNDEX.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>What Can I Do?</h2>
+            <p>I’ve worked across the full stack and mobile ecosystem, including:</p>
+            <ul>
+                <li><strong>Languages:</strong> TypeScript, JavaScript, Dart, Python, SQL, Java, HTML, CSS, C</li>
+                <li><strong>Web & Mobile:</strong> Flutter, React, Node.js, Express, REST APIs, Tailwind CSS, Bootstrap</li>
+                <li><strong>Backend & Cloud:</strong> Supabase, PostgreSQL, Prisma ORM, Row Level Security (RLS), Edge Functions, Cloud Storage</li>
+                <li><strong>Platforms & Tools:</strong> Git/GitHub, Vercel, Android Studio, Xcode, IntelliJ, VS Code</li>
+                <li><strong>Practices:</strong> CI/CD, Agile Development, Clean Architecture, Secure API Design, SaaS Architecture</li>
+            </ul>
+            <p>
+                I enjoy building products end-to-end — from clean, intuitive interfaces to secure, scalable backend systems — especially when those products solve real problems for real users.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects I’ve Rocked</h2>
+
+            <p>
+                <strong>GUNDEX (Founder & Lead Software Engineer):</strong>
+                I founded and built GUNDEX, a production mobile SaaS platform for Gundam Trading Card Game collectors. I designed and deployed a cross-platform Flutter app on iOS and Android, architected a scalable Supabase/PostgreSQL backend, implemented automated data ingestion pipelines, and launched a freemium subscription model. The platform has grown to 500+ users organically through community-driven development.
+            </p>
+
+            <p>
+                <strong>UI Web Builder:</strong>
+                As the principal software developer and team lead, I created a drag-and-drop website builder enabling real-time customization of modular components. Built using React, TypeScript, Tailwind CSS, Node.js, Prisma ORM, and Supabase, with authentication and deployment handled via Vercel.
+            </p>
+
+            <p>
+                <strong>Spotify Search Engine:</strong>
+                One of my earlier collaborative projects where I led development of a clean, user-focused search interface using the Spotify API and Flutter/Dart. This project strengthened my skills in API integration, UI design, and team collaboration.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Where I've Been</h2>
+            <p>
+                My journey has blended leadership, technology, and people-focused work. I’ve managed teams in the U.S. Navy, worked in consultative B2B technology roles, led retail operations at Verizon, and now operate my own software company.
+            </p>
+            <p>
+                Across all of it, I’ve focused on solving problems, improving systems, and helping teams and users succeed.
+            </p>
+        </section>
+
+        <section id="off-the-clock">
+            <h2>Off the Clock</h2>
+            <p>
+                Life at home is full and rewarding, shared with my wife Nataleigh, our three-year-old son Asher, four dogs, and two cats. Being a father is the most meaningful role I’ve ever had, and it’s shaped how I approach responsibility, time management, and growth. Outside of family life, I enjoy riding motorcycles, creating music, filming and photography, and spending time outdoors.
+            </p>
+        </section>
+
+        <section id="lets-talk">
+            <h2>Why We Should Talk</h2>
+            <p>
+                My time in the Navy shaped my resilience, discipline, and leadership under pressure. While an injury redirected my path, the lessons stuck — ownership, accountability, and follow-through.
+            </p>
+            <p>
+                Today, I bring that mindset into software engineering and product development. I take responsibility seriously and look for roles where I can contribute meaningfully, grow continuously, and be trusted to deliver.
+            </p>
+            <p>
+                If you're looking for someone who blends technical execution with leadership, humility, and drive, I’d welcome the conversation.
+            </p>
+        </section>
+    </div>
+
     <footer>
-        <hr> 
+        <hr>
         <nav id="footer-nav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -79,21 +150,21 @@
             <a href="contact.html">Contact</a>
         </nav>
         <p>© 2024 Jacob King</p>
-        <p><a href="tel:+17656102114">(765) 610-2114</a> || <a href="mailto:motokingjr@sbcglobal.net">motokingjr@sbcglobal.net</a></p>
+        <p>
+            <a href="tel:+17656102114">(765) 610-2114</a> ||
+            <a href="mailto:motokingjr@sbcglobal.net">motokingjr@sbcglobal.net</a>
+        </p>
     </footer>
-    
-    
-    
-<div id="confirmationModal" class="modal" style="display:none;">
-    <div class="modal-content">
-        <p>You are about to go to GitHub, are you sure?</p>
-        <button id="confirmBtn">Take me there</button>
-        <button id="cancelBtn">Go back</button>
+
+    <div id="confirmationModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <p>You are about to go to GitHub, are you sure?</p>
+            <button id="confirmBtn">Take me there</button>
+            <button id="cancelBtn">Go back</button>
+        </div>
     </div>
-</div>
 
     <script src="../js/githubscript.js"></script>
     <script src="../js/mobilemenu.js"></script>
-
 </body>
 </html>
