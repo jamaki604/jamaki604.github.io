@@ -9,6 +9,96 @@
     <link rel="stylesheet" href="../css/resumestyle.css">
     <link rel="stylesheet" href="../css/footerstyle.css">
     <link rel="stylesheet" href="../css/githubalertstyle.css">
+
+     <!-- Responsive enhancements -->
+    <style>
+        /* ===== Resume Layout Container ===== */
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: clamp(1rem, 3vw, 2rem);
+        }
+
+        /* ===== Header ===== */
+        header h1 {
+            font-size: clamp(2.1rem, 5vw, 2.8rem);
+            margin-bottom: 0.4rem;
+        }
+
+        header p {
+            font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+            line-height: 1.6;
+        }
+
+        /* ===== Section Titles ===== */
+        .section-title {
+            font-size: clamp(1.3rem, 3vw, 1.6rem);
+            margin-top: 2.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        /* ===== Body Text ===== */
+        p, li {
+            font-size: clamp(0.95rem, 2vw, 1.05rem);
+            line-height: 1.65;
+            max-width: 75ch;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ===== Job / Project spacing ===== */
+        .project,
+        .job {
+            margin-bottom: 1.8rem;
+        }
+
+        /* ===== Download button ===== */
+        .download-button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+        }
+
+        /* ===== Tablet ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                margin-top: 1.8rem;
+            }
+        }
+
+        /* ===== Large desktop ===== */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 1050px;
+            }
+
+            p, li {
+                font-size: 1.05rem;
+            }
+        }
+
+        /* ===== Ultra-wide / 4K ===== */
+        @media (min-width: 1800px) {
+            .container {
+                max-width: 1150px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>

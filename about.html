@@ -11,39 +11,76 @@
     <link rel="stylesheet" href="../css/githubalertstyle.css">
 
     <!-- Responsive enhancements -->
-    <style>
+   <style>
+        /* ===== Global layout container ===== */
         .content-container {
-            max-width: 900px;
+            max-width: 920px;
             margin: 0 auto;
-            padding: 1.5rem;
+            padding: clamp(1rem, 3vw, 2rem);
         }
 
+        /* ===== Section spacing ===== */
         section {
-            margin-bottom: 2.5rem;
+            margin-bottom: clamp(2rem, 5vw, 3rem);
         }
 
+        /* ===== Headings ===== */
         header h1 {
-            font-size: clamp(2rem, 5vw, 2.6rem);
+            font-size: clamp(2.1rem, 5vw, 2.8rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
         }
 
+        section h2 {
+            font-size: clamp(1.3rem, 3vw, 1.6rem);
+            margin-bottom: 0.75rem;
+        }
+
+        /* ===== Body text ===== */
         header p,
         section p,
         li {
-            font-size: 1rem;
-            line-height: 1.6;
+            font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+            line-height: 1.65;
+            max-width: 70ch; /* readable line length */
         }
 
         ul {
             padding-left: 1.2rem;
         }
 
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ===== Tablet adjustments ===== */
         @media (max-width: 768px) {
-            .content-container {
-                padding: 1rem;
+            header h1 {
+                font-size: 2.1rem;
             }
 
-            header p {
-                font-size: 0.95rem;
+            section {
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* ===== Large desktop / ultrawide ===== */
+        @media (min-width: 1440px) {
+            .content-container {
+                max-width: 1000px;
+            }
+
+            header p,
+            section p,
+            li {
+                font-size: 1.05rem;
+            }
+        }
+
+        /* ===== Very large / 4K screens ===== */
+        @media (min-width: 1800px) {
+            .content-container {
+                max-width: 1100px;
             }
         }
     </style>
