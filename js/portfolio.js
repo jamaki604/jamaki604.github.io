@@ -1,8 +1,7 @@
 document.documentElement.classList.add('js');
 
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const motionPreference = new URLSearchParams(window.location.search).get('motion');
-const motionReduced = motionPreference === 'reduced' || (motionPreference !== 'full' && reducedMotion.matches);
+const motionReduced = motionPreference === 'reduced';
 document.documentElement.classList.toggle('motion-full', !motionReduced);
 document.documentElement.classList.toggle('motion-reduced', motionReduced);
 const motionToggle = document.querySelector('[data-motion-toggle]');
